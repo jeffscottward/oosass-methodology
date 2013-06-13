@@ -1,0 +1,81 @@
+@import '_vars'
+
+=wh($size: 100%)
+  width: $size
+  height: $size
+
+=pseudo($blockType: block)
+  display: $blockType
+  content: ''
+
+=base_a($acolor: black, $deco_lnk: none, $deco_vis: none, $deco_hov: none, $deco_act: none)
+  a:link
+    color: $acolor
+    text-decoration: $deco_lnk
+  a:visited
+    color: $acolor
+    text-decoration: $deco_vis
+  a:hover
+    color: $acolor
+    text-decoration: $deco_hov
+  a:active
+    color: $acolor
+    text-decoration: $deco_act
+
+=horizontal($marginRight: 10px)
+  display: inline-block
+  vertical-align: top
+  margin-right: $marginRight
+  margin-left: -4px
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+=fontFace($font)
+  @font-face
+    font-family: $font
+    src: url("fonts/#{$font}.eot")
+    src: url("fonts/#{$font}.eot?#iefix") format("embedded-opentype"), url("fonts/#{$font}.woff") format("woff"), url("fonts/#{$font}.ttf") format("truetype"), url("fonts/#{$font}.svg##{$font}") format("svg")
+    font-weight: normal
+    font-style: normal
+
+=retina($width,$height)
+  width: $width/2
+  height: $height/2
+  +background-size(100% 100%)
+
+=circle($size)
+  +wh($size)
+  border-radius: 50%
+  overflow: hidden
+
+$i: 1
+=characterAnimation($animationName, $numberOfCells, $folderName)
+  +keyframes($animationName)
+    $percentageSteper: 100/$numberOfCells
+    0%
+      background-image: url(#{$imgPath + 'animations/' + $folderName + '-animation/' + 1 + '.png'})
+    @while $i <= $numberOfCells
+      $percentageStep: $i*$percentageSteper
+      #{$percentageStep + '%'}
+        background-image: url(#{$imgPath + 'animations/' + $folderName + '-animation/' + $i + '.png'})
+        $i: $i + 1
+    $i: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

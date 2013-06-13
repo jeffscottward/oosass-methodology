@@ -1,0 +1,1067 @@
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+ * HTML5 display definitions
+ * ========================================================================== */
+/* Corrects `block` display not defined in IE 8/9. */
+/* line 10, ../sass/_normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* Corrects `inline-block` display not defined in IE 8/9. */
+/* line 16, ../sass/_normalize.sass */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices. */
+/* line 23, ../sass/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Addresses styling for `hidden` attribute not present in IE 8/9. */
+/* line 30, ../sass/_normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+ * Base
+ * ========================================================================== */
+/* 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom. */
+/* line 42, ../sass/_normalize.sass */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Removes default margin. */
+/* line 53, ../sass/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+ * Links
+ * ========================================================================== */
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+/* line 64, ../sass/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+/* line 66, ../sass/_normalize.sass */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers. */
+/* ==========================================================================
+ * Typography
+ * ========================================================================== */
+/* Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome. */
+/* line 80, ../sass/_normalize.sass */
+h1 {
+  font-size: 2em;
+}
+
+/* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
+/* line 86, ../sass/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+/* line 92, ../sass/_normalize.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* Addresses styling not present in Safari 5 and Chrome. */
+/* line 98, ../sass/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* Addresses styling not present in IE 8/9. */
+/* line 104, ../sass/_normalize.sass */
+mark {
+  background: yellow;
+  color: black;
+}
+
+/* Corrects font family set oddly in Safari 5 and Chrome. */
+/* line 111, ../sass/_normalize.sass */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* Improves readability of pre-formatted text in all browsers. */
+/* line 118, ../sass/_normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Sets consistent quote types. */
+/* line 126, ../sass/_normalize.sass */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Addresses inconsistent and variable font size in all browsers. */
+/* line 132, ../sass/_normalize.sass */
+small {
+  font-size: 80%;
+}
+
+/* Prevents `sub` and `sup` affecting `line-height` in all browsers. */
+/* line 138, ../sass/_normalize.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 144, ../sass/_normalize.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 151, ../sass/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+ * Embedded content
+ * ========================================================================== */
+/* Removes border when inside `a` element in IE 8/9. */
+/* line 161, ../sass/_normalize.sass */
+img {
+  border: 0;
+}
+
+/* Corrects overflow displayed oddly in IE 9. */
+/* line 167, ../sass/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE 8/9 and Safari 5. */
+/* line 177, ../sass/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+ * Forms
+ * ========================================================================== */
+/* Define consistent border, margin, and padding. */
+/* line 187, ../sass/_normalize.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+/* line 196, ../sass/_normalize.sass */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome */
+/* line 207, ../sass/_normalize.sass */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/* Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet. */
+/* line 219, ../sass/_normalize.sass */
+button, input {
+  line-height: normal;
+}
+
+/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others. */
+/* line 229, ../sass/_normalize.sass */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 236, ../sass/_normalize.sass */
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* Re-set default cursor for disabled elements. */
+/* line 245, ../sass/_normalize.sass */
+button[disabled] {
+  cursor: default;
+}
+
+/* line 249, ../sass/_normalize.sass */
+input[disabled] {
+  cursor: default;
+}
+/* line 251, ../sass/_normalize.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/* line 256, ../sass/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/* line 263, ../sass/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9. */
+/* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof). */
+/* Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X. */
+/* Removes inner padding and border in Firefox 4+. */
+/* line 282, ../sass/_normalize.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers. */
+/* line 290, ../sass/_normalize.sass */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells. */
+/* line 303, ../sass/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =============================================================================
+ * Non-Semantic Helper Classes
+ * ========================================================================== */
+/* line 5, ../sass/_utils.sass */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+
+/* line 16, ../sass/_utils.sass */
+.ir br {
+  display: none;
+}
+
+/* line 19, ../sass/_utils.sass */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 23, ../sass/_utils.sass */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 33, ../sass/_utils.sass */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 41, ../sass/_utils.sass */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 44, ../sass/_utils.sass */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 48, ../sass/_utils.sass */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 51, ../sass/_utils.sass */
+.clearfix {
+  *zoom: 1;
+}
+
+/* =============================================================================
+ * Print Styles
+ * ========================================================================== */
+@media print {
+  /* line 59, ../sass/_utils.sass */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 67, ../sass/_utils.sass */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 69, ../sass/_utils.sass */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 71, ../sass/_utils.sass */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 73, ../sass/_utils.sass */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 76, ../sass/_utils.sass */
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 79, ../sass/_utils.sass */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 82, ../sass/_utils.sass */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 84, ../sass/_utils.sass */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 89, ../sass/_utils.sass */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 92, ../sass/_utils.sass */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 4, ../sass/_global-defaults.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -khtml-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+}
+
+/* line 17, ../sass/_global-defaults.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/_global-defaults.sass */
+ul, ol {
+  padding: 0;
+}
+
+/* line 23, ../sass/_global-defaults.sass */
+ul {
+  list-style: none;
+}
+
+/* line 26, ../sass/_global-defaults.sass */
+dl * {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: -4px;
+  margin-left: 0;
+}
+/* line 30, ../sass/_mixins.sass */
+dl *:first-child {
+  margin-left: 0;
+}
+/* line 32, ../sass/_mixins.sass */
+dl *:last-child {
+  margin-right: 0;
+}
+/* line 30, ../sass/_global-defaults.sass */
+dl * dt {
+  display: block;
+}
+
+/* line 33, ../sass/_global-defaults.sass */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, ../sass/_global-defaults.sass */
+sup {
+  text-decoration: none !important;
+}
+
+/* line 46, ../sass/_global-defaults.sass */
+button:hover,
+a:hover,
+input[type="submit"]:hover,
+input[type="file"]:hover,
+input[type="button"]:hover,
+.base-btn:hover {
+  cursor: pointer;
+}
+
+/* line 4, ../sass/_poc.sass */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../sass/_poc.sass */
+.page {
+  height: 100%;
+}
+/* line 10, ../sass/_poc.sass */
+.page .page-content {
+  *zoom: 1;
+  max-width: 60.1em;
+  _width: 60.1em;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.11314%, rgba(0, 0, 0, 0) 7.11314%, rgba(0, 0, 0, 0) 8.44426%, rgba(100, 100, 225, 0.25) 8.44426%, rgba(100, 100, 225, 0.25) 15.5574%, rgba(0, 0, 0, 0) 15.5574%, rgba(0, 0, 0, 0) 16.88852%, rgba(100, 100, 225, 0.25) 16.88852%, rgba(100, 100, 225, 0.25) 24.00166%, rgba(0, 0, 0, 0) 24.00166%, rgba(0, 0, 0, 0) 25.33278%, rgba(100, 100, 225, 0.25) 25.33278%, rgba(100, 100, 225, 0.25) 32.44592%, rgba(0, 0, 0, 0) 32.44592%, rgba(0, 0, 0, 0) 33.77704%, rgba(100, 100, 225, 0.25) 33.77704%, rgba(100, 100, 225, 0.25) 40.89018%, rgba(0, 0, 0, 0) 40.89018%, rgba(0, 0, 0, 0) 42.2213%, rgba(100, 100, 225, 0.25) 42.2213%, rgba(100, 100, 225, 0.25) 49.33444%, rgba(0, 0, 0, 0) 49.33444%, rgba(0, 0, 0, 0) 50.66556%, rgba(100, 100, 225, 0.25) 50.66556%, rgba(100, 100, 225, 0.25) 57.7787%, rgba(0, 0, 0, 0) 57.7787%, rgba(0, 0, 0, 0) 59.10982%, rgba(100, 100, 225, 0.25) 59.10982%, rgba(100, 100, 225, 0.25) 66.22296%, rgba(0, 0, 0, 0) 66.22296%, rgba(0, 0, 0, 0) 67.55408%, rgba(100, 100, 225, 0.25) 67.55408%, rgba(100, 100, 225, 0.25) 74.66722%, rgba(0, 0, 0, 0) 74.66722%, rgba(0, 0, 0, 0) 75.99834%, rgba(100, 100, 225, 0.25) 75.99834%, rgba(100, 100, 225, 0.25) 83.11148%, rgba(0, 0, 0, 0) 83.11148%, rgba(0, 0, 0, 0) 84.4426%, rgba(100, 100, 225, 0.25) 84.4426%, rgba(100, 100, 225, 0.25) 91.55574%, rgba(0, 0, 0, 0) 91.55574%, rgba(0, 0, 0, 0) 92.88686%, rgba(100, 100, 225, 0.25) 92.88686%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.11314%, rgba(0, 0, 0, 0) 7.11314%, rgba(0, 0, 0, 0) 8.44426%, rgba(100, 100, 225, 0.25) 8.44426%, rgba(100, 100, 225, 0.25) 15.5574%, rgba(0, 0, 0, 0) 15.5574%, rgba(0, 0, 0, 0) 16.88852%, rgba(100, 100, 225, 0.25) 16.88852%, rgba(100, 100, 225, 0.25) 24.00166%, rgba(0, 0, 0, 0) 24.00166%, rgba(0, 0, 0, 0) 25.33278%, rgba(100, 100, 225, 0.25) 25.33278%, rgba(100, 100, 225, 0.25) 32.44592%, rgba(0, 0, 0, 0) 32.44592%, rgba(0, 0, 0, 0) 33.77704%, rgba(100, 100, 225, 0.25) 33.77704%, rgba(100, 100, 225, 0.25) 40.89018%, rgba(0, 0, 0, 0) 40.89018%, rgba(0, 0, 0, 0) 42.2213%, rgba(100, 100, 225, 0.25) 42.2213%, rgba(100, 100, 225, 0.25) 49.33444%, rgba(0, 0, 0, 0) 49.33444%, rgba(0, 0, 0, 0) 50.66556%, rgba(100, 100, 225, 0.25) 50.66556%, rgba(100, 100, 225, 0.25) 57.7787%, rgba(0, 0, 0, 0) 57.7787%, rgba(0, 0, 0, 0) 59.10982%, rgba(100, 100, 225, 0.25) 59.10982%, rgba(100, 100, 225, 0.25) 66.22296%, rgba(0, 0, 0, 0) 66.22296%, rgba(0, 0, 0, 0) 67.55408%, rgba(100, 100, 225, 0.25) 67.55408%, rgba(100, 100, 225, 0.25) 74.66722%, rgba(0, 0, 0, 0) 74.66722%, rgba(0, 0, 0, 0) 75.99834%, rgba(100, 100, 225, 0.25) 75.99834%, rgba(100, 100, 225, 0.25) 83.11148%, rgba(0, 0, 0, 0) 83.11148%, rgba(0, 0, 0, 0) 84.4426%, rgba(100, 100, 225, 0.25) 84.4426%, rgba(100, 100, 225, 0.25) 91.55574%, rgba(0, 0, 0, 0) 91.55574%, rgba(0, 0, 0, 0) 92.88686%, rgba(100, 100, 225, 0.25) 92.88686%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.11314%, rgba(0, 0, 0, 0) 7.11314%, rgba(0, 0, 0, 0) 8.44426%, rgba(100, 100, 225, 0.25) 8.44426%, rgba(100, 100, 225, 0.25) 15.5574%, rgba(0, 0, 0, 0) 15.5574%, rgba(0, 0, 0, 0) 16.88852%, rgba(100, 100, 225, 0.25) 16.88852%, rgba(100, 100, 225, 0.25) 24.00166%, rgba(0, 0, 0, 0) 24.00166%, rgba(0, 0, 0, 0) 25.33278%, rgba(100, 100, 225, 0.25) 25.33278%, rgba(100, 100, 225, 0.25) 32.44592%, rgba(0, 0, 0, 0) 32.44592%, rgba(0, 0, 0, 0) 33.77704%, rgba(100, 100, 225, 0.25) 33.77704%, rgba(100, 100, 225, 0.25) 40.89018%, rgba(0, 0, 0, 0) 40.89018%, rgba(0, 0, 0, 0) 42.2213%, rgba(100, 100, 225, 0.25) 42.2213%, rgba(100, 100, 225, 0.25) 49.33444%, rgba(0, 0, 0, 0) 49.33444%, rgba(0, 0, 0, 0) 50.66556%, rgba(100, 100, 225, 0.25) 50.66556%, rgba(100, 100, 225, 0.25) 57.7787%, rgba(0, 0, 0, 0) 57.7787%, rgba(0, 0, 0, 0) 59.10982%, rgba(100, 100, 225, 0.25) 59.10982%, rgba(100, 100, 225, 0.25) 66.22296%, rgba(0, 0, 0, 0) 66.22296%, rgba(0, 0, 0, 0) 67.55408%, rgba(100, 100, 225, 0.25) 67.55408%, rgba(100, 100, 225, 0.25) 74.66722%, rgba(0, 0, 0, 0) 74.66722%, rgba(0, 0, 0, 0) 75.99834%, rgba(100, 100, 225, 0.25) 75.99834%, rgba(100, 100, 225, 0.25) 83.11148%, rgba(0, 0, 0, 0) 83.11148%, rgba(0, 0, 0, 0) 84.4426%, rgba(100, 100, 225, 0.25) 84.4426%, rgba(100, 100, 225, 0.25) 91.55574%, rgba(0, 0, 0, 0) 91.55574%, rgba(0, 0, 0, 0) 92.88686%, rgba(100, 100, 225, 0.25) 92.88686%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.11314%, rgba(0, 0, 0, 0) 7.11314%, rgba(0, 0, 0, 0) 8.44426%, rgba(100, 100, 225, 0.25) 8.44426%, rgba(100, 100, 225, 0.25) 15.5574%, rgba(0, 0, 0, 0) 15.5574%, rgba(0, 0, 0, 0) 16.88852%, rgba(100, 100, 225, 0.25) 16.88852%, rgba(100, 100, 225, 0.25) 24.00166%, rgba(0, 0, 0, 0) 24.00166%, rgba(0, 0, 0, 0) 25.33278%, rgba(100, 100, 225, 0.25) 25.33278%, rgba(100, 100, 225, 0.25) 32.44592%, rgba(0, 0, 0, 0) 32.44592%, rgba(0, 0, 0, 0) 33.77704%, rgba(100, 100, 225, 0.25) 33.77704%, rgba(100, 100, 225, 0.25) 40.89018%, rgba(0, 0, 0, 0) 40.89018%, rgba(0, 0, 0, 0) 42.2213%, rgba(100, 100, 225, 0.25) 42.2213%, rgba(100, 100, 225, 0.25) 49.33444%, rgba(0, 0, 0, 0) 49.33444%, rgba(0, 0, 0, 0) 50.66556%, rgba(100, 100, 225, 0.25) 50.66556%, rgba(100, 100, 225, 0.25) 57.7787%, rgba(0, 0, 0, 0) 57.7787%, rgba(0, 0, 0, 0) 59.10982%, rgba(100, 100, 225, 0.25) 59.10982%, rgba(100, 100, 225, 0.25) 66.22296%, rgba(0, 0, 0, 0) 66.22296%, rgba(0, 0, 0, 0) 67.55408%, rgba(100, 100, 225, 0.25) 67.55408%, rgba(100, 100, 225, 0.25) 74.66722%, rgba(0, 0, 0, 0) 74.66722%, rgba(0, 0, 0, 0) 75.99834%, rgba(100, 100, 225, 0.25) 75.99834%, rgba(100, 100, 225, 0.25) 83.11148%, rgba(0, 0, 0, 0) 83.11148%, rgba(0, 0, 0, 0) 84.4426%, rgba(100, 100, 225, 0.25) 84.4426%, rgba(100, 100, 225, 0.25) 91.55574%, rgba(0, 0, 0, 0) 91.55574%, rgba(0, 0, 0, 0) 92.88686%, rgba(100, 100, 225, 0.25) 92.88686%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  background-origin: content-box;
+  -webkit-background-clip: content;
+  -moz-background-clip: content;
+  background-clip: content-box;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .page-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, ../sass/_poc.sass */
+.page .page-main {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: red;
+}
+/* line 19, ../sass/_poc.sass */
+.page .page-header,
+.page .page-footer {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  min-height: 20px;
+  background: blue;
+}
+@media (min-width: 500px) {
+  /* line 19, ../sass/_poc.sass */
+  .page .page-header,
+  .page .page-footer {
+    min-height: 50px;
+  }
+}
+/* line 30, ../sass/_poc.sass */
+.page .page-header .company-logo {
+  max-height: 60px;
+}
+/* line 33, ../sass/_poc.sass */
+.page .page-header .company-tagline {
+  color: white;
+  display: inline;
+}
+/* line 37, ../sass/_poc.sass */
+.page .page-footer {
+  text-align: center;
+}
+/* line 40, ../sass/_poc.sass */
+.page .page-footer .footer-nav-list-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: -4px;
+}
+/* line 30, ../sass/_mixins.sass */
+.page .page-footer .footer-nav-list-item:first-child {
+  margin-left: 0;
+}
+/* line 32, ../sass/_mixins.sass */
+.page .page-footer .footer-nav-list-item:last-child {
+  margin-right: 0;
+}
+/* line 43, ../sass/_poc.sass */
+.page .page-footer .footer-nav-list-item-link {
+  color: white;
+}
+/* line 48, ../sass/_poc.sass */
+.page .page-main * {
+  transition: all 0.5s ease;
+}
+/* line 53, ../sass/_poc.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 57, ../sass/_poc.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 60, ../sass/_poc.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 60, ../sass/_poc.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 67, ../sass/_poc.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 67, ../sass/_poc.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 74, ../sass/_poc.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-0.sass */
+  .page.template-0 .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 7, ../sass/templates/_template-0.sass */
+  .page.template-0 .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 11, ../sass/templates/_template-0.sass */
+.page.template-0 .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+}
+/* line 3, ../sass/templates/_template-1.sass */
+.page.template-1 .main-tertiary {
+  display: none;
+}
+@media (min-width: 500px) {
+  /* line 6, ../sass/templates/_template-1.sass */
+  .page.template-1 .main-primary {
+    width: 49.33444%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 10, ../sass/templates/_template-1.sass */
+  .page.template-1 .main-secondary {
+    width: 49.33444%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-2.sass */
+  .page.template-2 .main-primary {
+    width: 32.44592%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 7, ../sass/templates/_template-2.sass */
+  .page.template-2 .main-secondary {
+    width: 66.22296%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 11, ../sass/templates/_template-2.sass */
+  .page.template-2 .main-tertiary {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-3.sass */
+  .page.template-3 .main-primary {
+    width: 15.5574%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 7, ../sass/templates/_template-3.sass */
+  .page.template-3 .main-secondary {
+    width: 83.11148%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 11, ../sass/templates/_template-3.sass */
+  .page.template-3 .main-tertiary {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-4.sass */
+  .page.template-4 .main-primary,
+  .page.template-4 .main-secondary,
+  .page.template-4 .main-tertiary {
+    min-height: 100%;
+  }
+}
+@media (min-width: 500px) {
+  /* line 9, ../sass/templates/_template-4.sass */
+  .page.template-4 .main-primary {
+    width: 32.44592%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 13, ../sass/templates/_template-4.sass */
+  .page.template-4 .main-secondary {
+    width: 32.44592%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 17, ../sass/templates/_template-4.sass */
+  .page.template-4 .main-tertiary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 1, ../sass/templates/_template-5.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 5, ../sass/templates/_template-5.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 8, ../sass/templates/_template-5.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 8, ../sass/templates/_template-5.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 15, ../sass/templates/_template-5.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 15, ../sass/templates/_template-5.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 22, ../sass/templates/_template-5.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}
+/* line 1, ../sass/templates/_template-6.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 5, ../sass/templates/_template-6.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 8, ../sass/templates/_template-6.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 8, ../sass/templates/_template-6.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 15, ../sass/templates/_template-6.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 15, ../sass/templates/_template-6.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 22, ../sass/templates/_template-6.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}
+/* line 1, ../sass/templates/_template-7.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 5, ../sass/templates/_template-7.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 8, ../sass/templates/_template-7.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 8, ../sass/templates/_template-7.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 15, ../sass/templates/_template-7.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 15, ../sass/templates/_template-7.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 22, ../sass/templates/_template-7.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}
+/* line 1, ../sass/templates/_template-8.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 5, ../sass/templates/_template-8.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 8, ../sass/templates/_template-8.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 8, ../sass/templates/_template-8.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 15, ../sass/templates/_template-8.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 15, ../sass/templates/_template-8.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 22, ../sass/templates/_template-8.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}
+/* line 1, ../sass/templates/_template-9.sass */
+.page .main-primary,
+.page .main-secondary {
+  height: 70%;
+}
+/* line 5, ../sass/templates/_template-9.sass */
+.page .main-tertiary {
+  height: 30%;
+}
+/* line 8, ../sass/templates/_template-9.sass */
+.page .main-primary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: orange;
+}
+@media (min-width: 500px) {
+  /* line 8, ../sass/templates/_template-9.sass */
+  .page .main-primary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+/* line 15, ../sass/templates/_template-9.sass */
+.page .main-secondary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: green;
+}
+@media (min-width: 500px) {
+  /* line 15, ../sass/templates/_template-9.sass */
+  .page .main-secondary {
+    width: 32.44592%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+/* line 22, ../sass/templates/_template-9.sass */
+.page .main-tertiary {
+  width: 100%;
+  float: left;
+  margin-right: 1.33111%;
+  display: inline;
+  background: purple;
+}

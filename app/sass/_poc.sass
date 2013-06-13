@@ -1,0 +1,87 @@
+// This archecticute assumes a MOBILE FIRST Approach and scales up accordingly
+// with susy grid and breakpoint gems
+
+html, body
+  height: 100%
+
+.page
+  height: 100%
+
+  .page-content
+    +container()
+    +susy-grid-background()
+
+  // Baseline Setup
+  .page-main
+    +span-columns( 12, 12 )
+    background: red
+
+  .page-header,
+  .page-footer
+    +span-columns( 12, 12 )
+    min-height: 20px
+    background: blue
+
+    +breakpoint(500px)
+      min-height: 50px
+
+  .page-header
+
+    .company-logo
+      max-height: 60px
+
+    .company-tagline
+      color: white
+      display: inline
+
+  .page-footer
+    text-align: center
+
+    .footer-nav-list-item
+      +horizontal()
+
+    .footer-nav-list-item-link
+      color: white
+
+  .page-main
+
+    *
+      transition: all .5s ease
+
+  // Baseline Template
+  // See templates folder for other iterations
+  .main-primary, 
+  .main-secondary
+    height: 70%
+
+  .main-tertiary
+    height: 30%
+
+  .main-primary
+    +span-columns( 12, 12 )
+    background: orange 
+
+    +breakpoint(500px)
+      +span-columns( 8, 12 )
+
+  .main-secondary
+    +span-columns( 12, 12 )
+    background: green
+
+    +breakpoint(500px)
+      +span-columns( 4 omega, 12 )
+
+  .main-tertiary
+    +span-columns( 12, 12 )
+    background: purple
+
+  @import "templates/_template-0"
+  @import "templates/_template-1"
+  @import "templates/_template-2"
+  @import "templates/_template-3"
+  @import "templates/_template-4"
+  @import "templates/_template-5"
+  @import "templates/_template-6"
+  @import "templates/_template-7"
+  @import "templates/_template-8"
+  @import "templates/_template-9"

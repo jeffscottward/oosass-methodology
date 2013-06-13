@@ -1,0 +1,47 @@
+@import '_vars'
+@import '_mixins'
+
+*
+  +box-sizing(border-box)
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  -khtml-tap-highlight-color: transparent
+  -moz-tap-highlight-color: transparent
+  -ms-tap-highlight-color: transparent
+
+a
+  text-decoration: none
+
+ul, ol
+  padding: 0
+
+ul
+  list-style: none
+
+dl *
+  +horizontal()
+  margin-left: 0
+
+  dt
+    display: block
+
+form
+  margin: 0
+  padding: 0
+
+sup
+  text-decoration: none !important
+
+button,
+a,
+input[type="submit"],
+input[type="file"],
+input[type="button"],
+.base-btn
+  &:hover
+    cursor: pointer

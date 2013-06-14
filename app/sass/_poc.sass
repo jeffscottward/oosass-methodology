@@ -11,6 +11,17 @@ html, body
     +container()
     +susy-grid-background()
 
+  .grid-testers
+
+    .template-tester-button
+      +span-columns( 1, 10 )
+      font-size: 12px
+      font-weight: bold
+
+      &:last-of-type
+        +span-columns( 1 omega, 10 )
+
+
   // Baseline Setup
   .page-main
     +span-columns( 12, 12 )

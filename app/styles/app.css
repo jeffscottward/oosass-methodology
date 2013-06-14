@@ -517,16 +517,47 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 4, ../sass/_poc.sass */
+/* line 1, ../sass/_widgets.sass */
+.widget {
+  background: yellow;
+}
+/* line 4, ../sass/_widgets.sass */
+.widget .widget-header,
+.widget .widget-footer {
+  color: darkred;
+}
+/* line 8, ../sass/_widgets.sass */
+.widget .widget-body {
+  width: 80%;
+}
+
+/* line 6, ../sass/_poc.sass */
 html, body {
   height: 100%;
 }
 
-/* line 7, ../sass/_poc.sass */
+/* line 9, ../sass/_poc.sass */
 .page {
   height: 100%;
 }
-/* line 10, ../sass/_poc.sass */
+/* line 15, ../sass/_poc.sass */
+.page .grid-testers .template-tester-button {
+  width: 8.55856%;
+  float: left;
+  margin-right: 1.6016%;
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 20, ../sass/_poc.sass */
+.page .grid-testers .template-tester-button:last-of-type {
+  width: 8.55856%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.8em;
+  display: inline;
+}
+/* line 24, ../sass/_poc.sass */
 .page .page-content {
   *zoom: 1;
   max-width: 60.1em;
@@ -553,24 +584,7 @@ html, body {
   display: table;
   clear: both;
 }
-/* line 16, ../sass/_poc.sass */
-.page .grid-testers .template-tester-button {
-  width: 8.55856%;
-  float: left;
-  margin-right: 1.6016%;
-  display: inline;
-  font-size: 12px;
-  font-weight: bold;
-}
-/* line 21, ../sass/_poc.sass */
-.page .grid-testers .template-tester-button:last-of-type {
-  width: 8.55856%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -0.8em;
-  display: inline;
-}
-/* line 26, ../sass/_poc.sass */
+/* line 28, ../sass/_poc.sass */
 .page .page-main {
   width: 100%;
   float: left;
@@ -578,7 +592,7 @@ html, body {
   display: inline;
   background: red;
 }
-/* line 30, ../sass/_poc.sass */
+/* line 32, ../sass/_poc.sass */
 .page .page-header,
 .page .page-footer {
   width: 100%;
@@ -589,26 +603,26 @@ html, body {
   background: blue;
 }
 @media (min-width: 500px) {
-  /* line 30, ../sass/_poc.sass */
+  /* line 32, ../sass/_poc.sass */
   .page .page-header,
   .page .page-footer {
     min-height: 50px;
   }
 }
-/* line 41, ../sass/_poc.sass */
+/* line 43, ../sass/_poc.sass */
 .page .page-header .company-logo {
   max-height: 60px;
 }
-/* line 44, ../sass/_poc.sass */
+/* line 46, ../sass/_poc.sass */
 .page .page-header .company-tagline {
   color: white;
   display: inline;
 }
-/* line 48, ../sass/_poc.sass */
+/* line 50, ../sass/_poc.sass */
 .page .page-footer {
   text-align: center;
 }
-/* line 51, ../sass/_poc.sass */
+/* line 53, ../sass/_poc.sass */
 .page .page-footer .footer-nav-list-item {
   display: inline-block;
   vertical-align: top;
@@ -623,25 +637,25 @@ html, body {
 .page .page-footer .footer-nav-list-item:last-child {
   margin-right: 0;
 }
-/* line 54, ../sass/_poc.sass */
+/* line 56, ../sass/_poc.sass */
 .page .page-footer .footer-nav-list-item-link {
   color: white;
 }
-/* line 59, ../sass/_poc.sass */
+/* line 61, ../sass/_poc.sass */
 .page .page-main * {
   transition: all 0.3s ease;
   -webkit-transform: translateZ(0);
 }
-/* line 65, ../sass/_poc.sass */
+/* line 67, ../sass/_poc.sass */
 .page .main-primary,
 .page .main-secondary {
   height: 70%;
 }
-/* line 69, ../sass/_poc.sass */
+/* line 71, ../sass/_poc.sass */
 .page .main-tertiary {
   height: 30%;
 }
-/* line 72, ../sass/_poc.sass */
+/* line 74, ../sass/_poc.sass */
 .page .main-primary {
   width: 100%;
   float: left;
@@ -650,7 +664,7 @@ html, body {
   background: orange;
 }
 @media (min-width: 500px) {
-  /* line 72, ../sass/_poc.sass */
+  /* line 74, ../sass/_poc.sass */
   .page .main-primary {
     width: 66.22296%;
     float: left;
@@ -658,7 +672,7 @@ html, body {
     display: inline;
   }
 }
-/* line 79, ../sass/_poc.sass */
+/* line 81, ../sass/_poc.sass */
 .page .main-secondary {
   width: 100%;
   float: left;
@@ -667,7 +681,7 @@ html, body {
   background: green;
 }
 @media (min-width: 500px) {
-  /* line 79, ../sass/_poc.sass */
+  /* line 81, ../sass/_poc.sass */
   .page .main-secondary {
     width: 32.44592%;
     float: right;
@@ -676,7 +690,7 @@ html, body {
     display: inline;
   }
 }
-/* line 86, ../sass/_poc.sass */
+/* line 88, ../sass/_poc.sass */
 .page .main-tertiary {
   width: 100%;
   float: left;

@@ -1,16 +1,15 @@
 // This archecticute assumes a MOBILE FIRST Approach and scales up accordingly
 // with susy grid and breakpoint gems
 
+@import "_widgets"
+
 html, body
   height: 100%
 
 .page
   height: 100%
 
-  .page-content
-    +container()
-    +susy-grid-background()
-
+  // Grid Tester
   .grid-testers
 
     .template-tester-button
@@ -21,8 +20,11 @@ html, body
       &:last-of-type
         +span-columns( 1 omega, 10 )
 
-
-  // Baseline Setup
+  // Page level blocks
+  .page-content
+    +container()
+    +susy-grid-background()
+  
   .page-main
     +span-columns( 12, 12 )
     background: red
@@ -60,7 +62,7 @@ html, body
       transition: all .3s ease
       -webkit-transform: translateZ(0)
 
-  // Baseline Template
+  // Template level blocks
   // See templates folder for other iterations
   .main-primary, 
   .main-secondary
@@ -87,13 +89,4 @@ html, body
     +span-columns( 12, 12 )
     background: purple
 
-  @import "templates/_template-0"
-  @import "templates/_template-1"
-  @import "templates/_template-2"
-  @import "templates/_template-3"
-  @import "templates/_template-4"
-  @import "templates/_template-5"
-  @import "templates/_template-6"
-  @import "templates/_template-7"
-  @import "templates/_template-8"
-  @import "templates/_template-9"
+  @import "_templates"

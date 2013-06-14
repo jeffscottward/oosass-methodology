@@ -22,7 +22,7 @@ html.no-js
               img.company-logo(src="/images/logo.png", alt="Toyota")
               figcaption.company-tagline Moving you foward
           .header-secondary
-        main.page-main
+        main.page-main(role="main")
           .main-primary
             .primary-top
               h1 This is an h1
@@ -44,6 +44,13 @@ html.no-js
                 option(value="car-5")
             .secondary-content
               p Lorem ipsum Ad sed incididunt elit pariatur sit do ea quis ad eiusmod anim proident non eiusmod esse cupidatat qui pariatur voluptate est in ad nisi qui aute velit irure consectetur cupidatat consequat.
+              .widget
+                h3.widget-header Please enter your email
+                .widget-body
+                  input(type="email").widget-email
+                  input(type="submit").widget-submit
+                .widget-footer
+                  p This widget is dope
           .main-tertiary
             h3 This is an h3
             p Lorem ipsum Ad sed incididunt elit pariatur sit do ea quis ad eiusmod anim proident non eiusmod esse cupidatat qui pariatur voluptate est in ad nisi qui aute velit irure consectetur cupidatat consequat.

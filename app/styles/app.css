@@ -612,7 +612,7 @@ html, body {
 }
 /* line 48, ../sass/_poc.sass */
 .page .page-main * {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 /* line 53, ../sass/_poc.sass */
 .page .main-primary,
@@ -771,14 +771,6 @@ html, body {
 }
 @media (min-width: 500px) {
   /* line 3, ../sass/templates/_template-4.sass */
-  .page.template-4 .main-primary,
-  .page.template-4 .main-secondary,
-  .page.template-4 .main-tertiary {
-    min-height: 100%;
-  }
-}
-@media (min-width: 500px) {
-  /* line 9, ../sass/templates/_template-4.sass */
   .page.template-4 .main-primary {
     width: 32.44592%;
     float: left;
@@ -787,7 +779,7 @@ html, body {
   }
 }
 @media (min-width: 500px) {
-  /* line 13, ../sass/templates/_template-4.sass */
+  /* line 7, ../sass/templates/_template-4.sass */
   .page.template-4 .main-secondary {
     width: 32.44592%;
     float: left;
@@ -796,7 +788,7 @@ html, body {
   }
 }
 @media (min-width: 500px) {
-  /* line 17, ../sass/templates/_template-4.sass */
+  /* line 11, ../sass/templates/_template-4.sass */
   .page.template-4 .main-tertiary {
     width: 32.44592%;
     float: right;
@@ -805,43 +797,18 @@ html, body {
     display: inline;
   }
 }
-/* line 1, ../sass/templates/_template-5.sass */
-.page .main-primary,
-.page .main-secondary {
-  height: 70%;
-}
-/* line 5, ../sass/templates/_template-5.sass */
-.page .main-tertiary {
-  height: 30%;
-}
-/* line 8, ../sass/templates/_template-5.sass */
-.page .main-primary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: orange;
-}
 @media (min-width: 500px) {
-  /* line 8, ../sass/templates/_template-5.sass */
-  .page .main-primary {
+  /* line 3, ../sass/templates/_template-5.sass */
+  .page.template-5 .main-primary {
     width: 66.22296%;
     float: left;
     margin-right: 1.33111%;
     display: inline;
   }
 }
-/* line 15, ../sass/templates/_template-5.sass */
-.page .main-secondary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: green;
-}
 @media (min-width: 500px) {
-  /* line 15, ../sass/templates/_template-5.sass */
-  .page .main-secondary {
+  /* line 7, ../sass/templates/_template-5.sass */
+  .page.template-5 .main-secondary {
     width: 32.44592%;
     float: right;
     margin-right: 0;
@@ -849,51 +816,64 @@ html, body {
     display: inline;
   }
 }
-/* line 22, ../sass/templates/_template-5.sass */
-.page .main-tertiary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: purple;
-}
-/* line 1, ../sass/templates/_template-6.sass */
-.page .main-primary,
-.page .main-secondary {
-  height: 70%;
-}
-/* line 5, ../sass/templates/_template-6.sass */
-.page .main-tertiary {
-  height: 30%;
-}
-/* line 8, ../sass/templates/_template-6.sass */
-.page .main-primary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: orange;
-}
 @media (min-width: 500px) {
-  /* line 8, ../sass/templates/_template-6.sass */
-  .page .main-primary {
+  /* line 11, ../sass/templates/_template-5.sass */
+  .page.template-5 .main-tertiary {
     width: 66.22296%;
     float: left;
     margin-right: 1.33111%;
     display: inline;
   }
 }
-/* line 15, ../sass/templates/_template-6.sass */
-.page .main-secondary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: green;
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-6.sass */
+  .page.template-6 .main-primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
 }
 @media (min-width: 500px) {
-  /* line 15, ../sass/templates/_template-6.sass */
-  .page .main-secondary {
+  /* line 7, ../sass/templates/_template-6.sass */
+  .page.template-6 .main-secondary {
+    width: 49.33444%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 11, ../sass/templates/_template-6.sass */
+  .page.template-6 .main-tertiary {
+    width: 49.33444%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.8em;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 3, ../sass/templates/_template-7.sass */
+  .page.template-7 .main-primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 7, ../sass/templates/_template-7.sass */
+  .page.template-7 .main-secondary {
+    width: 66.22296%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
+}
+@media (min-width: 500px) {
+  /* line 11, ../sass/templates/_template-7.sass */
+  .page.template-7 .main-tertiary {
     width: 32.44592%;
     float: right;
     margin-right: 0;
@@ -901,167 +881,59 @@ html, body {
     display: inline;
   }
 }
-/* line 22, ../sass/templates/_template-6.sass */
-.page .main-tertiary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: purple;
-}
-/* line 1, ../sass/templates/_template-7.sass */
-.page .main-primary,
-.page .main-secondary {
-  height: 70%;
-}
-/* line 5, ../sass/templates/_template-7.sass */
-.page .main-tertiary {
-  height: 30%;
-}
-/* line 8, ../sass/templates/_template-7.sass */
-.page .main-primary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: orange;
-}
 @media (min-width: 500px) {
-  /* line 8, ../sass/templates/_template-7.sass */
-  .page .main-primary {
-    width: 66.22296%;
+  /* line 3, ../sass/templates/_template-8.sass */
+  .page.template-8 .main-primary {
+    width: 100%;
     float: left;
     margin-right: 1.33111%;
     display: inline;
   }
 }
-/* line 15, ../sass/templates/_template-7.sass */
-.page .main-secondary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: green;
+@media (min-width: 500px) {
+  /* line 7, ../sass/templates/_template-8.sass */
+  .page.template-8 .main-secondary {
+    width: 32.44592%;
+    float: left;
+    margin-right: 1.33111%;
+    display: inline;
+  }
 }
 @media (min-width: 500px) {
-  /* line 15, ../sass/templates/_template-7.sass */
-  .page .main-secondary {
-    width: 32.44592%;
+  /* line 11, ../sass/templates/_template-8.sass */
+  .page.template-8 .main-tertiary {
+    width: 66.22296%;
     float: right;
     margin-right: 0;
     *margin-left: -0.8em;
     display: inline;
   }
 }
-/* line 22, ../sass/templates/_template-7.sass */
-.page .main-tertiary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: purple;
-}
-/* line 1, ../sass/templates/_template-8.sass */
-.page .main-primary,
-.page .main-secondary {
-  height: 70%;
-}
-/* line 5, ../sass/templates/_template-8.sass */
-.page .main-tertiary {
-  height: 30%;
-}
-/* line 8, ../sass/templates/_template-8.sass */
-.page .main-primary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: orange;
-}
 @media (min-width: 500px) {
-  /* line 8, ../sass/templates/_template-8.sass */
-  .page .main-primary {
-    width: 66.22296%;
+  /* line 3, ../sass/templates/_template-9.sass */
+  .page.template-9 .main-primary {
+    width: 100%;
     float: left;
     margin-right: 1.33111%;
     display: inline;
   }
 }
-/* line 15, ../sass/templates/_template-8.sass */
-.page .main-secondary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: green;
-}
 @media (min-width: 500px) {
-  /* line 15, ../sass/templates/_template-8.sass */
-  .page .main-secondary {
-    width: 32.44592%;
+  /* line 7, ../sass/templates/_template-9.sass */
+  .page.template-9 .main-secondary {
+    width: 24.00166%;
     float: right;
     margin-right: 0;
     *margin-left: -0.8em;
     display: inline;
   }
 }
-/* line 22, ../sass/templates/_template-8.sass */
-.page .main-tertiary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: purple;
-}
-/* line 1, ../sass/templates/_template-9.sass */
-.page .main-primary,
-.page .main-secondary {
-  height: 70%;
-}
-/* line 5, ../sass/templates/_template-9.sass */
-.page .main-tertiary {
-  height: 30%;
-}
-/* line 8, ../sass/templates/_template-9.sass */
-.page .main-primary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: orange;
-}
 @media (min-width: 500px) {
-  /* line 8, ../sass/templates/_template-9.sass */
-  .page .main-primary {
-    width: 66.22296%;
+  /* line 11, ../sass/templates/_template-9.sass */
+  .page.template-9 .main-tertiary {
+    width: 74.66722%;
     float: left;
     margin-right: 1.33111%;
     display: inline;
   }
-}
-/* line 15, ../sass/templates/_template-9.sass */
-.page .main-secondary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: green;
-}
-@media (min-width: 500px) {
-  /* line 15, ../sass/templates/_template-9.sass */
-  .page .main-secondary {
-    width: 32.44592%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -0.8em;
-    display: inline;
-  }
-}
-/* line 22, ../sass/templates/_template-9.sass */
-.page .main-tertiary {
-  width: 100%;
-  float: left;
-  margin-right: 1.33111%;
-  display: inline;
-  background: purple;
 }

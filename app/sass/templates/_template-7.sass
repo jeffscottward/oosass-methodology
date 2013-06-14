@@ -1,24 +1,15 @@
-.main-primary, 
-.main-secondary
-  height: 70%
+&.template-7
 
-.main-tertiary
-  height: 30%
+  .main-primary
+    +breakpoint(500px)
+      +span-columns( 12, 12 )
 
-.main-primary
-  +span-columns( 12, 12 )
-  background: orange 
+  .main-secondary
+    +breakpoint(500px)
+      +span-columns( 8, 12 )
 
-  +breakpoint(500px)
-    +span-columns( 8, 12 )
+  .main-tertiary
+    +breakpoint(500px)
+      +span-columns( 4 omega, 12 )
 
-.main-secondary
-  +span-columns( 12, 12 )
-  background: green
-
-  +breakpoint(500px)
-    +span-columns( 4 omega, 12 )
-
-.main-tertiary
-  +span-columns( 12, 12 )
-  background: purple
+      

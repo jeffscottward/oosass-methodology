@@ -1,8 +1,8 @@
-dsloosass-poc
+OOSASS-Methodology
 =============
 
 Scalable Responsive Architecture Definition
-
+````
 .myModule {
 
   // Default basline for Module
@@ -127,3 +127,4 @@ Scalable Responsive Architecture Definition
     //
   }
 }
+````
